@@ -20,7 +20,7 @@ const Home = () => {
                 , cheapest flexible blockchain for decentralized apps and cross
                 chain <span className="text-[#FDB833]">Dapps</span>.
               </h1>
-              <p className="text-[12px] leading-tight py-3 max-w-[600px]">
+              <p className="text-[12px] leading-tight py-3 max-w-[600px] text-[rgba(255,255,255,0.50)]">
                 Welcome to the world of Duckcoin (DuckChain), the leading
                 payment and blockchain token packed with incredible utilities!
                 Embrace the people's cryptocurrency and join the global
@@ -82,7 +82,7 @@ const Home = () => {
       <section className="flex w-full md:h-screen">
         <div className="container mx-auto w-[85%] flex items-center justify-between gap-6 flex-col md:flex-row">
           <div className="md:w-1/3 text-left">
-            <h1 className="text-[30px]">
+            <h1 className="text-[30px] text-white">
               Made for <span className="text-[#FDB833]">mass adoption.</span>
             </h1>
             <Image
