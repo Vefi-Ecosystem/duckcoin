@@ -1,13 +1,11 @@
-import { CustomButton, Header, Image } from "../../components";
+import { CustomButton, Image } from "../../components";
 import Duck from "../../assets/images/duck.svg";
 import Coin from "../../assets/images/coin.svg";
 import { Card, CustomCard } from "../../components/card";
-import Footer from "../../components/footer";
 
 const Home = () => {
   return (
     <>
-      <Header />
       <div className="flex w-full md:h-screen md:overflow-hidden">
         <div className="container mx-auto w-[85%] items-center flex flex-col md:flex-row">
           <div className="md:w-[65%] py-20 md:py-0">
@@ -29,13 +27,15 @@ const Home = () => {
               </p>
               <div className="py-3">
                 <CustomButton
-                  color="yellow"
+                  color="red"
                   label="Start building"
                   style={{
                     background: "#FDB833",
                     borderRadius: "20px",
                     padding: "10px 20px",
                     color: "#fff",
+                    textTransform: "capitalize",
+                    fontSize: "12px",
                   }}
                 />
               </div>
@@ -69,11 +69,15 @@ const Home = () => {
             <div>
               <span className="leading-tight py-4">
                 <h1 className="text-[90px] font-[600] heading">1000K+</h1>
-                <p className="text-sm ml-4 md:-mt-5">Total Users</p>
+                <p className="text-sm ml-4 md:-mt-5 text-[rgba(255,255,255,0.50)]">
+                  Total Users
+                </p>
               </span>
               <span className="leading-tight">
                 <h1 className="text-[90px] font-[600] heading">{`<$0.02`}</h1>
-                <p className="text-sm ml-4 md:-mt-5">Avg.transaction fee</p>
+                <p className="text-sm ml-4 md:-mt-5 text-[rgba(255,255,255,0.50)]">
+                  Avg.transaction fee
+                </p>
               </span>
             </div>
           </div>
@@ -144,13 +148,15 @@ const Home = () => {
             </p>
             <div className="py-3">
               <CustomButton
-                color="yellow"
+                color="red"
                 label="Duckcoin"
                 style={{
                   background: "#FDB833",
                   borderRadius: "20px",
                   padding: "10px 20px",
                   color: "#fff",
+                  textTransform: "capitalize",
+                  fontSize: "12px",
                 }}
               />
             </div>
@@ -160,7 +166,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };
